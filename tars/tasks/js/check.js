@@ -42,7 +42,7 @@ module.exports = () => {
                         .pipe(cache('eslint'))
                         .pipe(eslint())
                         .pipe(eslint.formatEach())
-                        .pipe(eslint.failAfterError());
+                        // .pipe(eslint.failAfterError());
             }
         }
         /* eslint-enable no-case-declarations */

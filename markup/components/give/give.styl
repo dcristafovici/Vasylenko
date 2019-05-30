@@ -1,0 +1,31 @@
+.give
+  background rgb(20, 27, 40)
+  padding-top 160px
+  padding-bottom 160px
+  position relative
+  &-image
+    position absolute
+    left 50%
+    transform: translateX(-50%)
+    bottom 0
+  .title
+    text-align center
+    h2
+      color $wh
+  &-items
+    display flex
+    justify-content space-between
+
+  &-item
+    text-align center
+    width 240px
+    margin-bottom 30px
+    &__number
+      font-family $Black
+      font-size 92px
+      color $yl
+    &__text
+      p
+        font-size 16px
+        line-height 24px
+        color $wh
