@@ -1,0 +1,38 @@
+.required
+  padding-top 160px
+  padding-bottom 160px
+  background rgb(20, 27, 40) url('../img/assets/required/bg.svg') no-repeat center/cover
+  .title
+    text-align center
+    margin-bottom 65px
+    h2
+      color $wh
+  &-items
+    display flex
+    flex-wrap wrap
+    justify-content space-between
+  &-item
+    width 50%
+    display flex
+    align-items center
+    &__image
+      margin-right 15px
+    &__title
+      color $wh
+      font-size 20px
+      line-height 28px
+      font-family $Bold
+      margin-bottom 20px
+      white-space: nowrap
+    &__paragraph
+      p
+        font-size 16px  
+        line-height 27px
+        color $wh
+        font-family $Reg
+    &:nth-child(2),
+    &:nth-child(4)
+      width calc(50% - 20px)
+    &:first-child,
+    &:nth-child(2)
+      margin-bottom 30px
