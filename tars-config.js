@@ -135,7 +135,7 @@ module.exports = {
          * Do you need to use notify?
          * @type {Boolean}
          */
-        useNotify: true,
+        useNotify: false,
 
         /**
          * Title for notifier
@@ -236,7 +236,7 @@ module.exports = {
      * Available 'pug', 'jade' and 'handlebars'
      * @type {String}
      */
-    templater: 'handlebars',
+    templater: 'jade',
 
     /**
      * Css-preprocessor
@@ -244,7 +244,7 @@ module.exports = {
      * .sass extension is supported if cssPreprocessor is 'scss'
      * @type {String}
      */
-    cssPreprocessor: 'scss',
+    cssPreprocessor: 'stylus',
 
     /**
      * What kind of size of images are you going to use.

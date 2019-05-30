@@ -1,0 +1,54 @@
+.header
+  height 110px
+  position absolute
+  left 0
+  top 0
+  width 100%
+  z-index 3
+  &-wrapper
+    display flex
+    justify-content space-between
+    align-items center
+    height 110px
+  &-right
+    display flex
+    justify-content flex-end
+    align-items center
+    .button
+      position relative
+      left -25px
+      margin-left 25px
+  &-phone
+    font-size 18px
+    color $wh
+    font-family $Light
+    padding-bottom 4px
+    position relative
+    margin-right 30px
+    &::before
+      content ''
+      position absolute
+      bottom 0
+      left 0
+      width 100%
+      height 1px
+      background #999a9d
+      transition all 0.35s ease
+    &:hover
+      &::before
+        background $wh
+
+nav.menu  
+  ul
+    display flex
+    align-items center
+  li
+    margin-right 50px
+    &:last-child
+      margin-right 0
+  a 
+    color #848484
+    transition all 0.35s ease
+    &:hover
+      color $wh
+

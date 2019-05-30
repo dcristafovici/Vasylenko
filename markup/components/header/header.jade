@@ -1,0 +1,33 @@
+include ../button/button
+mixin header(data)
+  header.header
+    .content
+
+      .header-wrapper
+
+        //- Header Left
+        .header-left
+          a(href="index.html").logo
+            img(src="static/img/assets/header/logo.png", alt="")
+        
+        //- Header Menu
+        .header-menu
+          nav.menu
+            ul
+              li
+                a(href="#") Главная
+              li
+                a(href="#") Коучинг
+              li
+                a(href="#") Обо мне
+              li
+                a(href="#") Начать работу
+              li
+                a(href="#") Контакты
+        
+
+        //- Header Right
+        .header-right 
+          a(href="tel:+38 097 889 17 40").header-phone +38 097 889 17 40  
+
+          +button('#','Обратный звонок')
