@@ -19,7 +19,7 @@ mixin packages(data)
             p Последующие 2 часа даю Вам пошаговые рекомендации и необходимую теоретическую и практическую информацию
           .packages-item__price 500 $
           .packages-item__button
-            +button('#pop-call','Забронировать').simple.full.btn-pop
+            +button('#pop-call','Забронировать').simple.full.btn-pop(data-action='Консультация 500$')
         
         //- Packages Item
         .packages-item
@@ -31,7 +31,7 @@ mixin packages(data)
             p ВАЖНО - Ваш успех это моя репутация! Моя цель - довести Вас до результата! Я буду требовать выполнения всех заданий и поставленных задач! Мы работаем минимум 1 встречу (skype/в живую) в неделю, максимум 2. Каждая встреча - 60 минут
           .packages-item__price 1 500 $
           .packages-item__button
-            +button('#pop-call','Забронировать').simple.full.btn-pop
+            +button('#pop-call','Забронировать').simple.full.btn-pop(data-action='Консультация 1500$')
 
         //- Packages Item
         .packages-item
@@ -43,5 +43,5 @@ mixin packages(data)
             p ВАЖНО - Ваш успех это моя репутация! Моя цель - довести Вас до результата! Я буду требовать выполнения всех заданий и поставленных задач! Мы работаем минимум 1 встречу (skype/в живую) в неделю, максимум 2. Каждая встреча - 60 минут
           .packages-item__price 5 000 $
           .packages-item__button
-            +button('#pop-call','Забронировать').simple.full.btn-pop
+            +button('#pop-call','Забронировать').simple.full.btn-pop(data-action='Консультация 5000$')
     

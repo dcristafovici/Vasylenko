@@ -1,7 +1,12 @@
 mixin popup(data)
+  //- #v-bg
   #pop-call.popup.mfp-hide.zoom-anim-dialog
     .popup-title Оставить заявку
     form.form
+      input(type="hidden" name="project_name" value="Vasylenko Coaching")
+      input(type="hidden" name="admin_email" value="denbudeyko@yandex.ru")
+      input(type="hidden" name="form_subject" value="Popup Form")
+      input(type="text" id='popup-action')
       .form-group.form-group__input
         input(type="text" name='name' placeholder='Имя')
       .form-group.form-group__input
@@ -11,3 +16,11 @@ mixin popup(data)
       .form-group
         button.button
           span Забронировать
+  
+  #pop-thx.popup.zoom-anim-dialog.mfp-hide
+    .popup-check
+      img(src="static/img/assets/popup/check.svg", alt="")
+    .popup-text
+      span Спасибо Вам за заявку.
+        br
+        | Я  свяжусь с Вами в ближайшее время.

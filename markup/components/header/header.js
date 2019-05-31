@@ -15,6 +15,12 @@ $(document).ready(function(){
   });
   
 
+	if(window.innerWidth < 993){
+		$('nav.menu a').on('click',function(){
+			$('.header-menu').removeClass('active');
+			$('.burger svg').removeClass('active')
+		})
+	}
 
   $('.home-action').on('click',function(){
     

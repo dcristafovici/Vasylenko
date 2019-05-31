@@ -16,4 +16,36 @@ $(document).ready(function(){
 		mainClass: 'my-mfp-zoom-in'
 	});
 
+	$('.btn-pop').on('click',function(){
+
+		var value  = $(this).data('action');
+		$('#popup-action').val(value)
+
+	})
+
+
+	//E-mail Ajax Send
+	$("form").submit(function() { //Change
+		var th = $(this);
+		$.ajax({
+			type: "POST",
+			url: "mail.php", //Change
+			data: th.serialize()
+		}).done(function() {
+			$.magnificPopup.close()
+			$.magnificPopup.open({
+				items: {
+						src: '#thx-pop',
+				},
+				type: 'inline'
+		});
+			setTimeout(function() {
+				// Done Functions
+				th.trigger("reset");
+			}, 1000);
+		});
+		return false;
+	});
+
+
 })
