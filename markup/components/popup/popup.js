@@ -34,7 +34,7 @@ $(document).ready(function(){
 		}).done(function() {
 			$.magnificPopup.open({
         items: {
-          src: '#thx'
+          src: '#pop-thx'
         },
         type: 'inline'
       });
