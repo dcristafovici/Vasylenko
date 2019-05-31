@@ -7,6 +7,16 @@
   height 50px
   position relative
   transition: all 0.3s ease-in-out
+  &.simple
+    &::before,
+    &::after
+      content none
+    &.full
+      width 100%
+      padding 0
+      text-align center
+      justify-content center
+      
   &::before
     content ''
     position: absolute;
