@@ -1,5 +1,9 @@
 $(document).ready(function(){
 
-  $('.packages-item__info').equalHeights()
+
+  if(window.innerWidth > 768){
+    $('.packages-item__info').equalHeights()
+    $('.packages-item__title').equalHeights()
+  }
 
 })

@@ -42,16 +42,18 @@
       object-fit: cover
 
 
-.reviews
-  &-bottom
-    .owl-stage-outer
-      width 66%
-      margin 0 auto
 
 
 .reviews
+  &-slider
+    width 66%
+    margin 0 auto
+  &-slide
+    img
+      width 100%
   &-slides.owl-carousel
     position relative
+
     .owl-nav
       button
         width 45px
@@ -63,10 +65,10 @@
         position absolute
         top 50%
         transform: translateY(-50%)
-        left 8%
+        right: calc(100% + 30px)
         &.owl-next
           background url('../img/assets/reviews/r-right.svg') no-repeat center/12px
           left  auto
-          right 8%
+          left calc(100% + 30px)
         span
           display none
