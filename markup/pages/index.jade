@@ -8,6 +8,7 @@ html(class="no-js", lang="ru")
   include ../components/required/required
   include ../components/service/service
   include ../components/give/give
+  include ../components/aspects/aspects
   head
     +head(head.defaults)
   body.page
@@ -24,6 +25,8 @@ html(class="no-js", lang="ru")
     +service()
 
     +give()
+
+    +aspects()
 
     script(src='%=static=%js/separate-js/svg4everybody.min.js')
     script svg4everybody();

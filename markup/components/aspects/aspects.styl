@@ -1,0 +1,44 @@
+.aspects
+  padding-top 150px
+  padding-bottom 150px
+  .title
+    text-align center
+    margin-bottom 70px
+  
+  &-items
+    column-count: 2
+    li
+      display flex
+      align-items: center
+      margin-bottom 50px
+    img
+      width 45px
+      margin-right 20px
+    span
+      color #212121
+      font-size 20px
+      font-family $Bold
+  &-quote
+    display flex
+    align-items center
+    &__image
+      margin-right 60px
+    &__paragraph
+      position relative
+      &::before
+        content "‘‘"
+        position absolute
+        left 0
+        top 0
+        color #dadada
+        font-size 226px
+        transform: translateY(-20%)
+        font-family $Reg
+
+      p
+        color #212121
+        font-size 18px
+        position relative
+        z-index 3
+        font-family $Reg
+        line-height 26px
