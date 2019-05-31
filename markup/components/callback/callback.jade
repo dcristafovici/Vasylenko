@@ -1,0 +1,60 @@
+mixin callback(data)
+  section.callback
+
+    .content
+
+      .callback-top
+
+        .callback-left
+          h2 Отправьте заявку
+          span Отправьте заявку и мы свяжемся  
+            br
+            | с вами для уточнения деталей!
+
+        .callback-right
+
+          //- CallBack Contacts
+          .callback-contacts
+            .callback-title Контакты
+            ul.callback-list
+              li 
+                a(href="mailto:vasylenko.consulting@gmail.com") vasylenko.consulting@gmail.com
+              li
+                a(href="tel:+38 097 889 17 40") +38 097 889 17 40
+          
+          //- Callback Media
+          .callback-socials
+            .callback-title Медиа
+            ul.socials-callback
+              li
+                a(href="#", target="_blank")
+                  img(src="static/img/assets/callback/vk.svg", alt="")
+              li
+                a(href="#", target="_blank")
+                  img(src="static/img/assets/callback/fb.svg", alt="")
+              li
+                a(href="#", target="_blank")
+                  img(src="static/img/assets/callback/ins.svg", alt="")
+              li
+                a(href="#", target="_blank")
+                  img(src="static/img/assets/callback/yb.svg", alt="")
+
+
+
+      .callback-bottom
+        
+        form.form
+          .form-row
+            .form-group.form-group__input
+              input(type="text" placeholder="Имя")
+            .form-group.form-group__input
+              input(type="tel" placeholder='Номер')
+            .form-group.form-group__input
+              input(type='email' placeholder='E-mail')
+            .form-group
+              button.button
+                span Записаться на коучинг копия
+          .form-accept
+            span Ознакомлен и принимаю 
+              br
+              | политику конфиденциальности

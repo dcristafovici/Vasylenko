@@ -12,6 +12,7 @@ html(class="no-js", lang="ru")
   include ../components/packages/packages
   include ../components/important/important
   include ../components/reviews/reviews
+  include ../components/callback/callback
   head
     +head(head.defaults)
   body.page
@@ -36,6 +37,8 @@ html(class="no-js", lang="ru")
     +important()
 
     +reviews()
+
+    +callback()
 
     script(src='%=static=%js/separate-js/svg4everybody.min.js')
     script svg4everybody();
