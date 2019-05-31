@@ -185,3 +185,129 @@
     height 200px
   .callback-bottom .form
     width 85%
+
+
+@media only screen and (max-width: 576px)
+  .home
+    &-wrapper
+      flex-direction: column-reverse
+    &-left,
+    &-right
+      width 100%
+  .home-right h1 span:last-child
+    left 0
+  .home-descr
+    padding-left 0
+  .home
+    padding-top 120px
+    text-align center
+  .home-descr
+    margin-bottom 50px
+  .home
+    height 700px
+    &-action
+      left 0
+      justify-content center
+    &-left
+      position relative
+      top 50px
+      ul
+        justify-content center
+  .required-item__title
+    white-space normal
+    br
+      display none
+  h2  
+    font-size 30px
+  .aspects-items
+    column-count: 1
+  .callback
+    &-contacts
+      margin-right 0
+      margin-bottom 30px
+      width 100%
+    &-right
+      flex-wrap: wrap
+      justify-content flex-start
+  .callback-bottom .form
+    .button
+      span
+        font-size 15px
+  
+
+@media only screen and (max-width: 480px)
+  h1
+    font-size 60px
+  .header-right
+    justify-content flex-end
+    .header-phone
+      display none
+  .home-descr span
+    font-size 17px
+    line-height 23px
+    br
+      display none
+  .home
+    height 550px
+    &-name
+      margin-bottom 20px
+    &-descr
+      margin-bottom 20px
+    &-left
+      top 25px
+  
+  .required-item__image
+    display none
+  .required-item__title
+    font-size 18px
+    line-height 24px
+    margin-bottom 10px
+  
+  .required-item:first-child, .required-item:nth-child(2), .required-item:nth-child(3), .required-item:nth-child(4)
+    margin-bottom 40px
+  .give-items
+    flex-wrap: wrap
+    &__left,
+    &__right
+      width 100%
+  .give-item
+    width 100%
+  .title
+    h2
+      br
+        display none
+  .aspects-items span
+    font-size 16px
+  .aspects-items li
+    margin-bottom 30px
+  .aspects-quote
+    flex-wrap: wrap
+    justify-content center
+    &__image
+      margin-right 0
+      margin-bottom 10px
+  
+  .packages-item__info
+    margin-bottom 30px
+  .yellow-list li
+    padding-left 20px
+  .reviews-top
+    flex-wrap: wrap
+  .reviews-video
+    margin-bottom 20px
+    width 100%
+  .reviews-slider
+    width 100%
+  .reviews-slides.owl-carousel .owl-nav button
+    transform: none
+    top calc(100% + 30px)
+    right auto
+    left 0
+    &.owl-next
+      left auto
+      right 0
+  .callback-bottom .form-group
+    width 100%
+  .callback-bottom .form-group:nth-child(3),
+  .callback-bottom .form-group:nth-child(2)
+    left 0
