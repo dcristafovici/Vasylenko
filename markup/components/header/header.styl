@@ -5,6 +5,10 @@
   top 0
   width 100%
   z-index 10
+  transform translate3d(0,-50px,0)
+  transition all 1s ease-in-out
+  transition-delay 0.3ss
+  opacity 0
   &-wrapper
     display flex
     justify-content space-between
@@ -52,3 +56,8 @@ nav.menu
     &:hover
       color $wh
 
+
+body.pace-done
+  .header
+    transform:  translateY(0)
+    opacity 1
