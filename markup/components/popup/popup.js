@@ -32,13 +32,12 @@ $(document).ready(function(){
 			url: "mail.php", //Change
 			data: th.serialize()
 		}).done(function() {
-			$.magnificPopup.close()
 			$.magnificPopup.open({
-				items: {
-						src: '#thx-pop',
-				},
-				type: 'inline'
-		});
+        items: {
+          src: '#thx'
+        },
+        type: 'inline'
+      });
 			setTimeout(function() {
 				// Done Functions
 				th.trigger("reset");

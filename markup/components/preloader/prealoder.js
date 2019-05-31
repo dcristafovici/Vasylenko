@@ -1,4 +1,4 @@
-$(window).on('load',function(){
+$(window).on('DOMContentLoaded',function(){
 
   $('body').addClass('pace-done')
 
