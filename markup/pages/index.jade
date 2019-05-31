@@ -15,14 +15,14 @@ html(class="no-js", lang="ru")
   include ../components/reviews/reviews
   include ../components/callback/callback
   include ../components/footer/footer
+  include ../components/popup/popup
   head
     +head(head.defaults)
   body.page
     |%=symbols=%
+    +preloader()
 
     +header()
-
-    +preloader()
 
     +home()
 
@@ -45,6 +45,8 @@ html(class="no-js", lang="ru")
     +callback()
 
     +footer()
+
+    +popup()
 
     script(src='%=static=%js/separate-js/svg4everybody.min.js')
     script svg4everybody();

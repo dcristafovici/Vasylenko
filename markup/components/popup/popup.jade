@@ -1,0 +1,13 @@
+mixin popup(data)
+  #pop-call.popup.mfp-hide.zoom-anim-dialog
+    .popup-title Оставить заявку
+    form.form
+      .form-group.form-group__input
+        input(type="text" name='name' placeholder='Имя')
+      .form-group.form-group__input
+        input(type="tel" name='phone' required placeholder='Номер телефона')
+      .form-group.form-group__input
+        input(type="email" name='email' required placeholder='E-mail')
+      .form-group
+        button.button
+          span Забронировать
