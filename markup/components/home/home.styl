@@ -52,11 +52,13 @@ ul.socials
         transition-delay: .6s
   &-descr
     padding-left 70px
-    margin-bottom 100px
+    margin-bottom 25px
     opacity 0
     transform: translate3d(0px,15px,0)
     transition all 1s ease-in-out
     transition-delay: .8s
+    &.home-descr__two
+      margin-bottom 50px
     span
       font-size 22px
       line-height 30px
@@ -72,31 +74,11 @@ ul.socials
     cursor pointer
     display flex
     align-items center
-   
-    &__left
-      position relative
-      padding-bottom 10px
-      &:hover
-        &::after
-          transform: translateY(3px)
-      &::after
-        content ''
-        position absolute
-        transition all 0.5s ease
-        transform: translateY(0)
-        top 100%
-        width 9px
-        height 9px
-        background url('../img/assets/home/down.svg') no-repeat center/contain
-        left 50%
-        margin-left -4.5px
-    &__right
-      margin-left 15px
-      font-size 18px
-      font-family $Light
-      color $wh
-      opacity .5  
-
+    .button
+      width 250px
+      padding 0
+      justify-content center 
+    
   
 .home
   &-action,

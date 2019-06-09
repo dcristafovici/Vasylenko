@@ -35,11 +35,8 @@ mixin home(data)
             span Эксперт по мотивации, 
               br
               | лидерству и развитию внутренней энергии
-          
+          .home-descr.home-descr__two
+            span Персональная работа над вашими успехами
           //- Home Action
           .home-action
-            .home-action__left
-              .mouse
-                span
-              .mouse-up
-            .home-action__right Листайте дальше
+            +button('#pop-call','Записаться на коучинг').btn-pop(data-action='Записаться на коучинг')
