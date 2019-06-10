@@ -1,0 +1,62 @@
+include ../button/button
+mixin how(data)
+  section.how
+    .content
+      .title 
+        h2 как это работает
+    
+      .how-items
+
+
+        //- How Item
+        .how-item
+          .how-item__left
+            span 01
+            img(src="static/img/assets/how/h1.png", alt="Home Icon")
+          .how-item__right
+            p Вы озвучиваете ваши запросы и пожелания. 
+              br
+              | Я анализирую вашу текущую ситуацию и готовлю план 
+              br
+              | работы. Согласовываем график. Оплата
+        
+        //- How Item
+        .how-item
+          .how-item__left
+            span 03
+            img(src="static/img/assets/how/h2.png", alt="Home Icon")
+          .how-item__right
+            p С вашей стороны - выполнение заданий. 
+              br
+              | С моей - информация, контроль, по необходимости "втык" 
+              br
+              | за невыполнение и лентяйство
+        
+
+        //- How Item
+        .how-item
+          .how-item__left
+            span 02
+            img(src="static/img/assets/how/h3.png", alt="Home Icon")
+          .how-item__right
+            p Старт процесса работы. Я даю теоретическую, 
+              br
+              | практическую информацию, весь необходимый 
+              br
+              | инструментарий, а также задания для выполнения
+        
+        //- How Item
+        .how-item
+          .how-item__left
+            span 04
+            img(src="static/img/assets/how/h4.svg", alt="Home Icon")
+          .how-item__right
+            p Подведем итоги. Фиксация всех новых результатов  
+              br
+              | и успехов
+              
+
+              
+
+      .how-button
+        +button('#','Записаться на коучинг копия')
