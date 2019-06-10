@@ -15,6 +15,7 @@ html(class="no-js", lang="ru")
   include ../components/packages/packages
   include ../components/important/important
   include ../components/reviews/reviews
+  include ../components/after/after
   include ../components/callback/callback
   include ../components/footer/footer
   include ../components/popup/popup
@@ -44,7 +45,9 @@ html(class="no-js", lang="ru")
 
     +packages()
 
-    //- +important()
+    +after()
+
+    +important()
 
     +reviews()
 
