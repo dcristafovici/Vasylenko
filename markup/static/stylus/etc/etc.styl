@@ -11,6 +11,18 @@
   .service .about-block
     top -80%
 
+  .home
+    padding-top 140px
+
+  .solved
+    background-size 60%
+    background-position: 100% 30px
+  .solved-bottom
+    padding-left 250px
+    padding-right 30px
+    br
+      display none
+
 @media only screen and (max-width: 992px)
   .content
     width calc(100% - 30px)
@@ -135,6 +147,26 @@
     br
       display none
 
+  .home
+    background-position 40% 0
+
+  .solved
+    background transparent
+    h2
+      text-align center
+  .solved-item__right p 
+    br
+      display none
+
+  .solved-bottom
+    background #151B29
+    height auto
+    padding 20px 40px
+  .how
+    padding-top 90px
+  .how-item__right p
+    br
+      display none
 
 @media only screen and (max-width: 768px)
   .home
@@ -190,6 +222,45 @@
     width 100%
 
 
+  .required-item__title
+    margin-bottom 0
+    white-space: normal
+  .required-item__paragraph p
+    line-height 23px
+  .required-item__title
+    line-height normal
+    br
+      display none
+
+
+  .give-button
+    bottom 11%
+
+  .how
+    padding-bottom 90px
+    height: auto
+    &-item
+      width 100%
+      margin-bottom 40px
+    .title
+      padding-bottom 30px
+
+  .after
+    height auto
+    padding-top 50px
+    padding-bottom 50px
+    background #11161D
+  .after-list li
+    br
+      display none
+  .important-wrapper
+    padding 0
+    padding-top 40px
+    padding-bottom 20px
+    
+
+
+
 @media only screen and (max-width: 576px)
   .home
     &-wrapper
@@ -239,6 +310,14 @@
 
   .popup
     width 100%
+
+
+  .home
+    height 750px
+    background-position 30%  0
+
+  .give-item
+    width 230px
 
 @media only screen and (max-width: 480px)
   h1
@@ -318,3 +397,23 @@
     left 0
   .home
     background-position 30%
+
+  .home-descr.home-descr__two
+    margin-bottom 30px
+  .give-button
+    bottom 140px
+  .solved-item__right span
+    font-size 18px
+  .solved-item__left
+    width 30px
+  .solved-item__right
+    width calc(100% - 50px)
+  .solved-bottom
+    padding 20px
+  .packages-text
+    font-size 16px
+    line-height 24px
+    br
+      display none
+  .reviews
+    padding-bottom 250px
