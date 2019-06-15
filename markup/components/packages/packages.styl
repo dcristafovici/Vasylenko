@@ -3,23 +3,41 @@
   padding-top 50px
   .title
     text-align center
-    margin-bottom 40px
+    margin-bottom 60px
   &-items
     display flex
     
   &-item
     width 30.83333333333333%
     margin-right 2.5%
-    background #E6E6E6
+    background $wh
     padding 25px
     box-sizing: border-box
+    padding-top 40px
+    position relative
+    &:nth-child(2)
+      background #E6E6E6
+    &__pop
+      width 335px
+      height 45px
+      display flex
+      align-items center
+      box-sizing: border-box
+      position absolute
+      left -1px
+      padding-left 40px
+      top -22px
+      color $wh
+      font-size 19px
+      font-family $Reg
+      background url('../img/assets/packages/red.svg') no-repeat center
     &__title
       font-size 29px
       font-family $Bold
       color #212121
       margin-bottom 30px
     &__info
-      margin-bottom 70px
+      margin-bottom 40px
       p
         color #212121
         font-family $Reg
@@ -32,7 +50,7 @@
       font-size 36px
       color #212121
       font-family $Bold
-      margin-bottom 40px
+      margin-bottom 30px
 
 
 
